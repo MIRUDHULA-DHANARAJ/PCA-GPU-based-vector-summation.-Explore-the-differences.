@@ -23,13 +23,14 @@ Copy output data from the device to the host and verify the results against the 
 
 ## PROGRAM :
 
-Developed by: Mirudhula D
-
-Register number: 212221230060
 
 i)
 ## The execution configuration of block.x = 1024
 ```
+Developed by: Mirudhula D
+
+Register number: 212221230060
+
 #include "../common/common.h"
 #include <cuda_runtime.h>
 #include <stdio.h>
@@ -177,6 +178,11 @@ int main(int argc, char **argv)
 ## The execution configuration of block.x = 1024
 
 ```
+Developed by: Mirudhula D
+
+Register number: 212221230060
+
+
 #include "../common/common.h"
 #include <cuda_runtime.h>
 #include <stdio.h>
@@ -323,6 +329,10 @@ int main(int argc, char **argv)
 ii) 
 ## The execution configuration of block.x = 256
 ```
+Developed by: Mirudhula D
+
+Register number: 212221230060
+
 #include "../common/common.h"
 #include <cuda_runtime.h>
 #include <stdio.h>
