@@ -4,6 +4,8 @@ i) Using the program sumArraysOnGPU-timer.cu, set the block.x = 1023. Recompile 
 ii) Refer to sumArraysOnGPU-timer.cu, and let block.x = 256. Make a new kernel to let each thread handle two elements. Compare the results with other execution confi gurations.
 ## Aim:
 i) To compare the execution time and result of summing two arrays using CUDA programming by setting block.x = 1023 and block.x = 1024.
+
+
 ii) To analyze the impact of changing execution configuration on the execution time and result of summing two arrays using CUDA programming by letting each thread handle two elements and setting block.x = 256.
 
 ## Procedure:
