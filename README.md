@@ -481,14 +481,50 @@ int main(int argc, char **argv)
 ## Output:
 i)
 ## The execution confi guration of block.x = 1023
-
+```
+(base) student@MidPC:~$ su
+Password: 
+root@MidPC:/home/student# cd Desktop
+root@MidPC:/home/student/Desktop# nvcc first.cu
+root@MidPC:/home/student/Desktop# ./a.out
+./a.out Starting...
+Using Device 0: NVIDIA GeForce GTX 1660 SUPER
+Vector size 134217728
+initialData Time elapsed 3.138552 sec
+sumArraysOnHost Time elapsed 0.475402 sec
+sumArraysOnGPU <<<  131201, 1023  >>>  Time elapsed 0.005549 sec
+Arrays match.
+```
 ![1023](https://user-images.githubusercontent.com/94828147/234347255-50f8c13a-f885-47f2-9d24-e94fcf8a4f07.png)
 
 ## The execution confi guration of block.x = 1024
+```
+root@MidPC:/home/student/Desktop# nvcc first.cu
+root@MidPC:/home/student/Desktop# ./a.out
+./a.out Starting...
+Using Device 0: NVIDIA GeForce GTX 1660 SUPER
+Vector size 134217728
+initialData Time elapsed 3.151760 sec
+sumArraysOnHost Time elapsed 0.475017 sec
+sumArraysOnGPU <<<  131072, 1024  >>>  Time elapsed 0.005517 sec
+Arrays match.
+```
 
 ![1024](https://user-images.githubusercontent.com/94828147/234347367-6317a5e4-ccc8-4522-8092-33752d23067a.png)
 
+ii)
 ## The execution confi guration of block.x = 256
+```
+root@MidPC:/home/student/Desktop# nvcc first.cu
+root@MidPC:/home/student/Desktop# ./a.out
+./a.out Starting...
+Using Device 0: NVIDIA GeForce GTX 1660 SUPER
+Vector size 16777216
+initialData Time elapsed 0.391801 sec
+sumArraysOnHost Time elapsed 0.058644 sec
+sumArraysOnGPU <<<  65536, 256  >>>  Time elapsed 0.000831 sec
+Arrays match.
+```
 
 ![253](https://user-images.githubusercontent.com/94828147/234347755-e6185267-b191-4043-9a37-786af55e4b43.png)
 
