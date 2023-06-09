@@ -33,7 +33,7 @@ Developed by: Mirudhula D
 
 Register number: 212221230060
 
-#include "../common/common.h"
+#include "common.h"
 #include <cuda_runtime.h>
 #include <stdio.h>
 
@@ -185,7 +185,7 @@ Developed by: Mirudhula D
 Register number: 212221230060
 
 
-#include "../common/common.h"
+#include "common.h"
 #include <cuda_runtime.h>
 #include <stdio.h>
 
@@ -335,7 +335,7 @@ Developed by: Mirudhula D
 
 Register number: 212221230060
 
-#include "../common/common.h"
+#include "common.h"
 #include <cuda_runtime.h>
 #include <stdio.h>
 
